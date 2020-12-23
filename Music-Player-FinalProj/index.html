@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a062562745.js" crossorigin="anonymous"></script>
+    <title>Audio Player</title>
+    <link rel=stylesheet href="style.css" media=all> 
+  </head>
+
+
+
+  <!-- Main box of player -->
+  <div class="player-cn">
+  <div class="infos-cn">
+    <div class="timer">00:00</div>
+    <div class="title"></div>
+    <div class="duration">03:15</div>
+  </div>
+  <div id="myProgress">
+    <div id="myBar"></div>
+  </div>
+  
+  <!-- Buttons-->
+  <div class="button-cn">
+    <div class="button-action first-button" onclick="previous()">
+       <div id="button-faws-back">
+         <i class='fas fa-step-backward'></i>
+       </div>
+    </div>
+    <div class="button-action" onclick="rewind()"></div>
+    
+    <div class="button-action" onclick="toggleAudio()">
+        <div id="button-faws-play-pause">
+          <i class='fas fa-play' id="icon-play"></i>
+          <i class='fas fa-pause' id="icon-pause" style="display: none"></i>
+        </div>
+     </div>
+
+     <div class="button-action" onclick="next()">
+        <div id="button-faws-next">
+          <i class='fas fa-step-forward'></i>
+        </div>
+     </div>
+
+     <div class="button-play" onclick="forward()">
+
+
+     <div class="button-mute" id="toggleMute" onclick="toggleMute()">
+        <div id="button-faws-volume">
+          <i id="icon-vol-up" class='fas fa-volume-up'></i>
+          <i id="icon-vol-mute" class='fas fa-volume-mute' style="display: none"></i>
+        </div>
+     </div>
+  </div>
+
+</div>
+
+  </html>
+
+  
+
+
+
